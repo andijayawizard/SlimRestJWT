@@ -19,9 +19,9 @@ return [
         // setting database toko
         'db' => [
             'host' => 'localhost',
-            'user' => 'root',
-            'pass' => '!@#123QWEasdzxc',
-            'dbname' => 'db_test',
+            'user' => 'dbuser',
+            'pass' => 'dbpass',
+            'dbname' => 'dbname',
             'driver' => 'mysql'
         ],
 
