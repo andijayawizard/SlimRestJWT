@@ -31,7 +31,7 @@
         "sort-packages": true
     },
     "scripts": {
-        "start": "php -S localhost:8101 -t public",
+        "start": "php -S https://morillocoatings.com:8101 -t public",
         "test": "phpunit"
     }
 }
