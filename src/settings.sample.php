@@ -27,7 +27,7 @@ return [
 
         // jwt settings
         'jwt' => [
-            'secret' => 'supersecretkeyyoushouldnotcommittogithub'
+            'secret' => 'key-yang-sangat-rahasia-jangan-upload-ke-github'
         ]
     ],
 ];
