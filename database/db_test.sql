@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   PRIMARY KEY (`IdUser`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table db_test.user: ~4 rows (approximately)
+-- Dumping data for table db_test.user: ~5 rows (approximately)
 DELETE FROM `user`;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 INSERT INTO `user` (`IdUser`, `Username`, `NamaLengkap`, `Email`, `NoHp`, `Password`, `ApiKey`) VALUES
@@ -72,7 +72,13 @@ INSERT INTO `user` (`IdUser`, `Username`, `NamaLengkap`, `Email`, `NoHp`, `Passw
 	(13, 'andijaya', 'andika', 'andijaya@gmail.com', '0812', 'andijaya', NULL),
 	(14, 'budi', 'budi susanto', 'budi@gmail.com', '0899', 'budi', NULL),
 	(15, 'deni', 'deni santoso', 'deni.santoso@gmail.com', '0899', 'deni', NULL),
-	(16, 'fahmi', 'fahmi hamzah', 'fahmi@gmail.com', '089912001200', 'fahmi', NULL);
+	(16, 'fahmi', 'fahmi hamzah', 'fahmi@gmail.com', '089912001200', 'fahmi', NULL),
+	(17, 'hendra', 'hendra', 'hendra@gmail.com', '0899', 'hendra', NULL),
+	(19, 'iwan', 'iwan', 'iwan@gmail.com', '0899', 'iwan', NULL),
+	(20, '', '', '', '', '', NULL),
+	(21, 'jojon', 'jojon pelawak', 'jojon@gmail.com', '0899', 'jojon', NULL),
+	(22, 'kiwil', 'kiwil pelawak', 'kiwil@gmail.com', '0822', 'kiwil', NULL),
+	(23, 'lingga', 'lingga pradana', 'lingga@gmail.com', '0822', 'lingga', NULL);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
