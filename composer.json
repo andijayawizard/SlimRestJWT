@@ -31,7 +31,8 @@
         "sort-packages": true
     },
     "scripts": {
-        "start": "php -S localhost:8101 -t public",
+        "start:local": "php -S localhost:8101 -t public",
+        "start:remote": "php -S https://morillocoatings.com:8101 -t public",
         "test": "phpunit"
     }
 }
