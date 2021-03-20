@@ -19,15 +19,15 @@ return [
         // setting database toko
         'db' => [
             'host' => 'localhost',
-            'user' => 'root',
-            'pass' => '!@#123QWEasdzxc',
-            'dbname' => 'db_toko',
+            'user' => 'dbuser',
+            'pass' => 'dbpass',
+            'dbname' => 'dbname',
             'driver' => 'mysql'
         ],
 
         // jwt settings
         'jwt' => [
-            'secret' => 'supersecretkeyyoushouldnotcommittogithub'
+            'secret' => 'key-yang-teramat-sangat-rahasia-sekali-jangan-upload-ke-github'
         ]
     ],
 ];
