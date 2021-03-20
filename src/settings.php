@@ -21,7 +21,7 @@ return [
             'host' => 'localhost',
             'user' => 'root',
             'pass' => '!@#123QWEasdzxc',
-            'dbname' => 'db_test',
+            'dbname' => 'db_toko',
             'driver' => 'mysql'
         ],
 
