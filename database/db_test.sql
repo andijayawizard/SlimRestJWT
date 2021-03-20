@@ -1,5 +1,5 @@
 -- --------------------------------------------------------
--- Host:                         localhost
+-- Host:                         127.0.0.1
 -- Server version:               5.7.24 - MySQL Community Server (GPL)
 -- Server OS:                    Win64
 -- HeidiSQL Version:             10.2.0.5599
@@ -21,9 +21,8 @@ CREATE TABLE IF NOT EXISTS `barang` (
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
 -- Dumping data for table db_test.barang: ~4 rows (approximately)
-DELETE FROM `barang`;
 /*!40000 ALTER TABLE `barang` DISABLE KEYS */;
-INSERT INTO `barang` (`id_barang`, `nama_barang`, `qty`, `harga`) VALUES
+REPLACE INTO `barang` (`id_barang`, `nama_barang`, `qty`, `harga`) VALUES
 	(2, 'handuk', 3, 45000),
 	(4, 'sepatu kulit', 2, 125000),
 	(6, 'kacamata', 3, 500000),
@@ -41,9 +40,8 @@ CREATE TABLE IF NOT EXISTS `produk` (
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table db_test.produk: ~6 rows (approximately)
-DELETE FROM `produk`;
 /*!40000 ALTER TABLE `produk` DISABLE KEYS */;
-INSERT INTO `produk` (`IdProduk`, `KodeProduk`, `NamaProduk`, `HargaJual`, `Stok`) VALUES
+REPLACE INTO `produk` (`IdProduk`, `KodeProduk`, `NamaProduk`, `HargaJual`, `Stok`) VALUES
 	(2, '8999999273378', 'CONERLLO CHOCOLUV 135', 25000, 100),
 	(3, '8999999275556', 'WALLS NINJA JELLY', 25000, 100),
 	(4, '8999999275563', 'NINJA EAGLE SURP', 25000, 100),
@@ -62,12 +60,11 @@ CREATE TABLE IF NOT EXISTS `user` (
   `Password` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `ApiKey` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`IdUser`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table db_test.user: ~5 rows (approximately)
-DELETE FROM `user`;
+-- Dumping data for table db_test.user: ~11 rows (approximately)
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` (`IdUser`, `Username`, `NamaLengkap`, `Email`, `NoHp`, `Password`, `ApiKey`) VALUES
+REPLACE INTO `user` (`IdUser`, `Username`, `NamaLengkap`, `Email`, `NoHp`, `Password`, `ApiKey`) VALUES
 	(1, 'user', 'User', 'user@user.com', '0822222222222', 'user1234', 'TVXYQc8WVp1jJHLpVRLXvs4tuoXHVSg0'),
 	(13, 'andijaya', 'andika', 'andijaya@gmail.com', '0812', 'andijaya', NULL),
 	(14, 'budi', 'budi susanto', 'budi@gmail.com', '0899', 'budi', NULL),
@@ -75,10 +72,10 @@ INSERT INTO `user` (`IdUser`, `Username`, `NamaLengkap`, `Email`, `NoHp`, `Passw
 	(16, 'fahmi', 'fahmi hamzah', 'fahmi@gmail.com', '089912001200', 'fahmi', NULL),
 	(17, 'hendra', 'hendra', 'hendra@gmail.com', '0899', 'hendra', NULL),
 	(19, 'iwan', 'iwan', 'iwan@gmail.com', '0899', 'iwan', NULL),
-	(20, '', '', '', '', '', NULL),
 	(21, 'jojon', 'jojon pelawak', 'jojon@gmail.com', '0899', 'jojon', NULL),
 	(22, 'kiwil', 'kiwil pelawak', 'kiwil@gmail.com', '0822', 'kiwil', NULL),
-	(23, 'lingga', 'lingga pradana', 'lingga@gmail.com', '0822', 'lingga', NULL);
+	(23, 'lingga', 'lingga pradana', 'lingga@gmail.com', '0822', 'lingga', NULL),
+	(24, 'cepot', 'cepot copet', 'cepot@gmail.com', '0812', 'cepot', NULL);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
